@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap');
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+div.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.main {
+    display: flex;
+    width: 60rem;
+    background: whitesmoke;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 20%;
+    margin-top: 5rem;
+}
+
+
+.logo {
+    margin-left: 2rem;
+    height: 30rem;
+    width: 30rem;
+    padding: -10rem;
+}
+
+.form {
+    padding: 3rem;
+    width: 50rem;
+}
+
+input[type=text],input[type=email], input[type=password] {
+    width: 20rem;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px solid #857d7d;
+    color: #020202;
+    font-size: 16px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+label {
+    color: #524b4b;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#submit {
+    font-size: 16px;
+    background: #2f77d2;
+    border: 1px solid #796de6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 21rem;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: 0.8s;
+}
+
+#submit:hover {
+    background: rgb(66, 63, 63);
+}
