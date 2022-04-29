@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jsfile.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div >
+                <img class="logo" src="images/Lap_top.png" alt="">
+            </div>
+            <div class="form">
+                <h2>Registration Form </h2>
+                <form id="form_id" method="post" name="myform">
+                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                    <input type="email" name="mail" id="mail" placeholder="Email" required/>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required/>
+                    <input type="text" name="username" id="username" placeholder="Username" required/>
+                    <input type="password" name="password" id="password" placeholder="Password" required/>
+                    <input type="button" value="Register" id="submit" onclick="store()" />
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script>
+        function store() {
+          var name = document.getElementById('name');
+          var mail = document.getElementById('mail');
+          var phone = document.getElementById('phone');
+          var username = document.getElementById('username');
+          var pw = document.getElementById('password');
+    
+    
+          localStorage.setItem('name', name.value);
+          localStorage.setItem('mail', mail.value);
+          localStorage.setItem('phone', phone.value);
+          localStorage.setItem('username', username.value);
+          localStorage.setItem('password', pw.value);
+         
+    
+        }
+    
+      </script>
+</body>
+
+</html>
